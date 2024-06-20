@@ -1,0 +1,14 @@
+# Ignorer config.ini
+config.ini
+
+# Ignorer det virtuelle miljø
+venv/
+
+# Ignorer diverse systemfiler
+*.pyc
+__pycache__/
+.DS_Store
+
+# Ignorer IDE-konfigurationsfiler
+.vscode/
+.idea/

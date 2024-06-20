@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oversættelsesapp</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Oversættelsesapp</h1>
+        <label for="sourceLanguage">Vælg kildesprog:</label>
+        <select id="sourceLanguage">
+            <option value="da">Dansk</option>
+            <option value="en">Engelsk</option>
+            <!-- Tilføj flere sprog efter behov -->
+        </select>
+        <br><br>
+        <label for="targetLanguage">Vælg destinationsprog:</label>
+        <select id="targetLanguage">
+            <option value="en">Engelsk</option>
+            <option value="da">Dansk</option>
+            <!-- Tilføj flere sprog efter behov -->
+        </select>
+        <br><br>
+        <textarea id="inputText" placeholder="Indtast tekst, der skal oversættes"></textarea>
+        <button onclick="translateText()">Oversæt</button>
+        <br><br>
+        <textarea id="outputText" placeholder="Oversat tekst" readonly></textarea>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
